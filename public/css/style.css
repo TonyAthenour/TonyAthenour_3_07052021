@@ -1,0 +1,26 @@
+#bloc_page {
+  font-family: Roboto, arial, serif;
+}
+
+h1 {
+  font-family: Shrikhand, arial, serif;
+}
+
+.saisie {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #eaeaea;
+  text-align: center;
+  font-size: 14px;
+}
+
+#logo {
+  text-align: center;
+}
+#logo img {
+  width: 165px;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
