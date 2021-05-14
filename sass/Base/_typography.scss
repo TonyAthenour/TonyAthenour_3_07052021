@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 #bloc_page{
-    font-family: Roboto, arial, serif;
+    font-family: Roboto, arial, serif;  
+    font-weight: 300;
+    font-size: large;
 }
 
 h1{
-    font-family: Shrikhand, arial, serif;
+    font-size: x-large;
+}
+
+.btn, .saisie{
+    font-family: Roboto, arial, serif;
+    font-weight: 400;
+    font-size: medium;
 }

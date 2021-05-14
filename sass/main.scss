@@ -1,7 +1,11 @@
+@import "./utils/mixins";
+
 @import "./base/base";
 @import "./base/typography";
+
+@import "./components/buttons";
 
 @import "./layout/form";
 @import "./layout/header";
 
-@import "./utils/mixins";
+@import "./pages/index";

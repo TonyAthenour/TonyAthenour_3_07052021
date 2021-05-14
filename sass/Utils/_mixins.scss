@@ -9,3 +9,14 @@
         @content;
     }
 }
+
+@mixin olli {
+    background: rgb(246, 246, 246);
+    margin: 20px;
+    padding: 20px 20px 20px 14px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px black;
+    &::marker{
+        color: red;
+    }
+}
