@@ -1,53 +1,49 @@
 .btn{
-    height: 50px;
-    border-radius: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: $color-secondary;
-    color: white;
+   @include btn;
 }
 
 .aide ol{
     list-style: none;
     counter-reset: li;
     padding-left: 0px;
-    li{
-        counter-increment: li;
-        font-weight: bold;
-        font-size: 0.85em;
-        background: rgb(246, 246, 246);
-        margin: 20px;
-        padding: 28px 20px 22px 14px;
-        border-radius: 20px;
-        box-shadow: 3px 6px 6px rgba(182, 173, 173, 0.377);
+    }
 
-        &::before{
-            padding: 3px;
-            font-weight: normal;
-            content: counter(li);
-            display: inline-block;
-            width: 1.2em;
-            margin-left: -1.7em;
-            margin-right: 0.5em;
-            text-align: center;
-            background: $color-primary;
-            color: white;
-            border-radius: 50%;
-        }
+.aide__prev{
+    counter-increment: li;
+    font-weight: bold;
+    font-size: 0.85em;
+    background: rgb(246, 246, 246);
+    margin: 20px;
+    padding: 28px 20px 22px 14px;
+    border-radius: 20px;
+    box-shadow: 3px 6px 6px rgba(182, 173, 173, 0.377);
 
-        &:hover{
-            background: rgb(245, 237, 255);
-            i{
-                color: $color-primary;
-            }
-        }
+    &::before{
+        padding: 3px;
+        font-weight: normal;
+        content: counter(li);
+        display: inline-block;
+        width: 1.2em;
+        margin-left: -1.7em;
+        margin-right: 0.5em;
+        text-align: center;
+        background: $color-primary;
+        color: white;
+        border-radius: 50%;
+    }
 
-        i{
-            width: 21px;
-            font-size: 1.2em;
-            color: rgb(126, 126, 126);
-            padding-left: 15px;
-            padding-right: 25px;
-        }
+    i{
+        width: 21px;
+        font-size: 1.2em;
+        color: rgb(126, 126, 126);
+        padding-left: 15px;
+        padding-right: 25px;
+    }
+}
+
+.aide__prev--active{
+    background: rgb(245, 237, 255);
+    i{
+        color: $color-primary;
     }
 }
