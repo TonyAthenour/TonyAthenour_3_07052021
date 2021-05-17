@@ -20,3 +20,41 @@
     color: white;
     box-shadow: 1px 3px 10px rgb(145, 145, 145);
 }
+
+@mixin image{
+    border-radius: 25px 25px 0px 0px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        position: relative;
+        top: -25%;
+    }
+}
+
+@mixin vignette{
+    background: white;
+    width: 335px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 1px 3px 10px rgb(145, 145, 145);
+    &__img{
+        height: 175px;
+        @include image;
+    }
+    &__texte{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__lieu{
+        margin: 10px;
+    }
+        
+    &__favori{
+        padding-right: 30px;
+        font-size: 1.3em;
+    }
+
+
+}

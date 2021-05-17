@@ -12,3 +12,11 @@
         color: rgb(77, 77, 77);
     }
 }
+
+.restaurant{
+    background: #f6f6f6;
+}
+
+.vignette{
+    @include vignette;
+}

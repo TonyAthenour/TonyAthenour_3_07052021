@@ -10,6 +10,14 @@ h1 {
   font-size: x-large;
 }
 
+h2 {
+  margin: 15px;
+}
+
+h3 {
+  margin: 10px;
+}
+
 .btn, .saisie {
   font-family: Roboto, arial, serif;
   font-weight: 400;
@@ -123,5 +131,51 @@ h1 {
 
 .intro p {
   color: #4d4d4d;
+}
+
+.restaurant {
+  background: #f6f6f6;
+}
+
+.vignette {
+  background: white;
+  width: 335px;
+  margin: auto;
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 3px 10px #919191;
+          box-shadow: 1px 3px 10px #919191;
+}
+
+.vignette__img {
+  height: 175px;
+  border-radius: 25px 25px 0px 0px;
+  overflow: hidden;
+}
+
+.vignette__img img {
+  width: 100%;
+  position: relative;
+  top: -25%;
+}
+
+.vignette__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vignette__lieu {
+  margin: 10px;
+}
+
+.vignette__favori {
+  padding-right: 30px;
+  font-size: 1.3em;
 }
 /*# sourceMappingURL=main.css.map */
