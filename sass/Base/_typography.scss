@@ -5,6 +5,8 @@
     font-family: Roboto, arial, serif;  
     font-weight: 300;
     font-size: large;
+    width: 375px;
+    margin: auto;
 }
 
 h1{
@@ -12,11 +14,14 @@ h1{
 }
 
 h2{
-    margin: 15px;
+    padding-left: 15px;
+    padding-top: 55px;
 }
 
 h3{
-    margin: 10px;
+    margin: 0px;
+    font-size: 1em;
+    padding: 15px 10px 5px 10px;
 }
 
 .btn, .saisie{

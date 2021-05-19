@@ -1,11 +1,11 @@
 @mixin tablet {
-    @media screen and (min-width: map-get($breakpoints, tablet)){
+    @media screen and (min-width: map-get($breakpoints, medium)){
         @content;
     }
 }
 
 @mixin desktop {
-    @media screen and (min-width: map-get($brakpoint, desktop)){
+    @media screen and (min-width: map-get($brakpoint, large)){
         @content;
     }
 }
@@ -18,28 +18,29 @@
     padding-right: 20px;
     background: linear-gradient($color-secondary, $color-primary);
     color: white;
-    box-shadow: 1px 3px 10px rgb(145, 145, 145);
+    box-shadow: $shadow;
 }
 
-@mixin image{
-    border-radius: 25px 25px 0px 0px;
+@mixin image($x_pos){
+    border-radius: 25px 25px 0 0;
     overflow: hidden;
     img{
         width: 100%;
         position: relative;
-        top: -25%;
+        top: $x_pos;
     }
 }
 
-@mixin vignette{
+@mixin vignette($img_pos: -25%){
     background: white;
     width: 335px;
     margin: auto;
+    margin-bottom: 15px;
     border-radius: 25px;
-    box-shadow: 1px 3px 10px rgb(145, 145, 145);
+    box-shadow: $shadow;
     &__img{
         height: 175px;
-        @include image;
+        @include image($img_pos);
     }
     &__texte{
         display: flex;
@@ -48,12 +49,14 @@
     }
 
     &__lieu{
-        margin: 10px;
+        margin: 0px 10px 10px;
     }
         
     &__favori{
-        padding-right: 30px;
+        margin-right: 30px;
         font-size: 1.3em;
+        cursor: pointer;
+        color: rgb(145, 145, 145);
     }
 
 

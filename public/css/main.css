@@ -4,6 +4,8 @@
   font-family: Roboto, arial, serif;
   font-weight: 300;
   font-size: large;
+  width: 375px;
+  margin: auto;
 }
 
 h1 {
@@ -11,11 +13,14 @@ h1 {
 }
 
 h2 {
-  margin: 15px;
+  padding-left: 15px;
+  padding-top: 55px;
 }
 
 h3 {
-  margin: 10px;
+  margin: 0px;
+  font-size: 1em;
+  padding: 15px 10px 5px 10px;
 }
 
 .btn, .saisie {
@@ -30,11 +35,11 @@ h3 {
   border-radius: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7ad9), to(#9256dc));
+  background: linear-gradient(#ff7ad9, #9256dc);
   color: white;
-  -webkit-box-shadow: 1px 3px 10px #919191;
-          box-shadow: 1px 3px 10px #919191;
+  -webkit-box-shadow: 1px 3px 10px grey;
+          box-shadow: 1px 3px 10px grey;
 }
 
 .aide ol {
@@ -64,7 +69,7 @@ h3 {
   margin-left: -1.7em;
   margin-right: 0.5em;
   text-align: center;
-  background: #9356DC;
+  background: #9256dc;
   color: white;
   border-radius: 50%;
 }
@@ -82,7 +87,7 @@ h3 {
 }
 
 .aide__prev--active i {
-  color: #9356DC;
+  color: #9256dc;
 }
 
 #form_localisation {
@@ -118,7 +123,7 @@ h3 {
 
 .intro {
   text-align: center;
-  background: #f6f6f6;
+  background: whitesmoke;
   height: 290px;
 }
 
@@ -130,35 +135,41 @@ h3 {
 }
 
 .intro p {
-  color: #4d4d4d;
+  color: #6e6e6e;
+}
+
+.aide {
+  margin-bottom: 70px;
 }
 
 .restaurant {
-  background: #f6f6f6;
+  background: whitesmoke;
+  height: 1225px;
 }
 
-.vignette {
+.vignette1, .vignette3, .vignette4 {
   background: white;
   width: 335px;
   margin: auto;
+  margin-bottom: 15px;
   border-radius: 25px;
-  -webkit-box-shadow: 1px 3px 10px #919191;
-          box-shadow: 1px 3px 10px #919191;
+  -webkit-box-shadow: 1px 3px 10px grey;
+          box-shadow: 1px 3px 10px grey;
 }
 
-.vignette__img {
+.vignette1__img, .vignette3__img, .vignette4__img {
   height: 175px;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 25px 25px 0 0;
   overflow: hidden;
 }
 
-.vignette__img img {
+.vignette1__img img, .vignette3__img img, .vignette4__img img {
   width: 100%;
   position: relative;
   top: -25%;
 }
 
-.vignette__texte {
+.vignette1__texte, .vignette3__texte, .vignette4__texte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,12 +181,59 @@ h3 {
           justify-content: space-between;
 }
 
-.vignette__lieu {
-  margin: 10px;
+.vignette1__lieu, .vignette3__lieu, .vignette4__lieu {
+  margin: 0px 10px 10px;
 }
 
-.vignette__favori {
-  padding-right: 30px;
+.vignette1__favori, .vignette3__favori, .vignette4__favori {
+  margin-right: 30px;
   font-size: 1.3em;
+  cursor: pointer;
+  color: #919191;
+}
+
+.vignette2 {
+  background: white;
+  width: 335px;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 3px 10px grey;
+          box-shadow: 1px 3px 10px grey;
+}
+
+.vignette2__img {
+  height: 175px;
+  border-radius: 25px 25px 0 0;
+  overflow: hidden;
+}
+
+.vignette2__img img {
+  width: 100%;
+  position: relative;
+  top: -85%;
+}
+
+.vignette2__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vignette2__lieu {
+  margin: 0px 10px 10px;
+}
+
+.vignette2__favori {
+  margin-right: 30px;
+  font-size: 1.3em;
+  cursor: pointer;
+  color: #919191;
 }
 /*# sourceMappingURL=main.css.map */
