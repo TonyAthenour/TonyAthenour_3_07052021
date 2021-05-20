@@ -38,6 +38,7 @@
     margin-bottom: 15px;
     border-radius: 25px;
     box-shadow: $shadow;
+    cursor: pointer;
     &__img{
         height: 175px;
         @include image($img_pos);
@@ -58,6 +59,25 @@
         cursor: pointer;
         color: rgb(145, 145, 145);
     }
+}
 
-
+@mixin footer{
+    background: mix(black, $color-background, 80%);
+    color: white;
+    height: 195px;
+    ul{
+        list-style: none;
+        font-size: 0.9em;
+    }
+    li{
+        padding-bottom: 10px;
+    }
+    i{
+        padding-right: 10px;
+        font-size: 0.8em;
+        width: 15px;
+    }
+    .fa-hands-helping{
+        font-size: 0.7em;
+    }
 }
