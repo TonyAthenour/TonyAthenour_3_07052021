@@ -1,15 +1,22 @@
+#logo p{
+    margin: 10px;
+}
+
 .intro{
     text-align: center;
     background: $color-background;
     height: 290px;
-    h1{
+    &__titre{
+        font-family: Roboto, arial, serif;
         margin-top: 0px;
         padding-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 45px;
+        padding-right: 45px;
     }
-    p{
+    &__texte{
         color: mix(black, $color-background, 55%);
+        margin-top: -15px;
+        margin-bottom: 30px;
     }
 }
 

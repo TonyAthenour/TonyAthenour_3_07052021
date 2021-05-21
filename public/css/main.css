@@ -8,17 +8,26 @@
   margin: auto;
 }
 
-h1 {
+#logo, h1 {
+  font-family: Shrikhand, arial, serif;
+  font-size: 1.5em;
+}
+
+.intro__titre {
   font-size: x-large;
+  font-weight: bold;
 }
 
 h2 {
-  padding-left: 15px;
+  font-size: 1.3em;
+  margin: 0;
+  padding-left: 20px;
   padding-top: 55px;
+  padding-bottom: 20px;
 }
 
 h3 {
-  margin: 0px;
+  margin: 0;
   font-size: 1em;
   padding: 15px 10px 5px 10px;
 }
@@ -122,9 +131,11 @@ h3 {
   text-align: center;
 }
 
-#logo img {
-  width: 165px;
-  padding: 15px;
+#logo i {
+  font-size: 0.7em;
+  position: relative;
+  left: -75px;
+  cursor: pointer;
 }
 
 footer {
@@ -152,21 +163,28 @@ footer .fa-hands-helping {
   font-size: 0.7em;
 }
 
+#logo p {
+  margin: 10px;
+}
+
 .intro {
   text-align: center;
   background: whitesmoke;
   height: 290px;
 }
 
-.intro h1 {
+.intro__titre {
+  font-family: Roboto, arial, serif;
   margin-top: 0px;
   padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
-.intro p {
+.intro__texte {
   color: #6e6e6e;
+  margin-top: -15px;
+  margin-bottom: 30px;
 }
 
 .aide {
@@ -268,5 +286,9 @@ footer .fa-hands-helping {
   font-size: 1.3em;
   cursor: pointer;
   color: #919191;
+}
+
+img {
+  width: 375px;
 }
 /*# sourceMappingURL=main.css.map */
