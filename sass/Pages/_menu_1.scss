@@ -1,3 +1,35 @@
-img{
+.img_background img{
     width: 375px;
+    position: relative;
+    z-index: -1;
+}
+
+article{
+    background: $color-background;
+    border-radius: 35px 35px 0 0;
+    margin-top: -60px;
+    padding-bottom: 1px;
+    h1{
+        padding: 20px 20px 0px 20px;
+        font-weight: 300;
+    }
+    h2{
+        font-size: 0.9em;
+        font-weight: 400;
+        color: mix(black, $color-background, 55%);
+        padding: 0 0 5px 0;
+        margin: 40px 20px 15px 25px;
+        width: 40px;
+        border-bottom: 3px solid $color-tertiary;
+    }
+    .plats{
+        @include vignette;
+        &__detail{
+            font-size: 0.8em;
+        }
+    }
+    .commande{
+        margin: 50px;
+        text-align: center;
+    }
 }

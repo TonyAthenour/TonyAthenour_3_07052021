@@ -19,6 +19,8 @@
     background: linear-gradient($color-secondary, $color-primary);
     color: white;
     box-shadow: $shadow;
+    min-width: 185px;
+    cursor: pointer;
 }
 
 @mixin image($x_pos){
@@ -49,7 +51,7 @@
         justify-content: space-between;
     }
 
-    &__lieu{
+    &__detail{
         margin: 0px 10px 10px;
     }
         
@@ -77,5 +79,13 @@
 
     &__new--hidden{
         visibility: hidden;
+    }
+
+    &__tarif{
+        padding-right: 20px;
+        padding-top: 15px;
+        margin-bottom: 0px;
+        font-size: 0.8em;
+        font-weight: 500;
     }
 }

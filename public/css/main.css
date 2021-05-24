@@ -55,6 +55,8 @@ h3 {
   color: white;
   -webkit-box-shadow: 1px 3px 10px grey;
           box-shadow: 1px 3px 10px grey;
+  min-width: 185px;
+  cursor: pointer;
 }
 
 .aide ol {
@@ -231,7 +233,7 @@ footer .fa-hands-helping {
           justify-content: space-between;
 }
 
-.vignette1__lieu, .vignette3__lieu, .vignette4__lieu {
+.vignette1__detail, .vignette3__detail, .vignette4__detail {
   margin: 0px 10px 10px;
 }
 
@@ -259,6 +261,14 @@ footer .fa-hands-helping {
 
 .vignette1__new--hidden, .vignette3__new--hidden, .vignette4__new--hidden {
   visibility: hidden;
+}
+
+.vignette1__tarif, .vignette3__tarif, .vignette4__tarif {
+  padding-right: 20px;
+  padding-top: 15px;
+  margin-bottom: 0px;
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
 .vignette2 {
@@ -296,7 +306,7 @@ footer .fa-hands-helping {
           justify-content: space-between;
 }
 
-.vignette2__lieu {
+.vignette2__detail {
   margin: 0px 10px 10px;
 }
 
@@ -326,7 +336,121 @@ footer .fa-hands-helping {
   visibility: hidden;
 }
 
-img {
+.vignette2__tarif {
+  padding-right: 20px;
+  padding-top: 15px;
+  margin-bottom: 0px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.img_background img {
   width: 375px;
+  position: relative;
+  z-index: -1;
+}
+
+article {
+  background: whitesmoke;
+  border-radius: 35px 35px 0 0;
+  margin-top: -60px;
+  padding-bottom: 1px;
+}
+
+article h1 {
+  padding: 20px 20px 0px 20px;
+  font-weight: 300;
+}
+
+article h2 {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #6e6e6e;
+  padding: 0 0 5px 0;
+  margin: 40px 20px 15px 25px;
+  width: 40px;
+  border-bottom: 3px solid #98e2cf;
+}
+
+article .plats {
+  background: white;
+  width: 335px;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 3px 10px grey;
+          box-shadow: 1px 3px 10px grey;
+  cursor: pointer;
+}
+
+article .plats__img {
+  height: 175px;
+  border-radius: 25px 25px 0 0;
+  overflow: hidden;
+}
+
+article .plats__img img {
+  width: 100%;
+  position: relative;
+  top: -80px;
+}
+
+article .plats__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article .plats__detail {
+  margin: 0px 10px 10px;
+}
+
+article .plats__favori {
+  margin-right: 30px;
+  font-size: 1.3em;
+  cursor: pointer;
+  color: #919191;
+}
+
+article .plats__new {
+  width: 80px;
+  font-size: 0.8em;
+  font-weight: 500;
+  background: #98e2cf;
+  padding: 5px;
+  text-align: center;
+  color: #26876f;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  top: 15px;
+  left: 235px;
+}
+
+article .plats__new--hidden {
+  visibility: hidden;
+}
+
+article .plats__tarif {
+  padding-right: 20px;
+  padding-top: 15px;
+  margin-bottom: 0px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+article .plats__detail {
+  font-size: 0.8em;
+}
+
+article .commande {
+  margin: 50px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
