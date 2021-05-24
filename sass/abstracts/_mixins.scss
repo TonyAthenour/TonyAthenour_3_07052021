@@ -31,7 +31,7 @@
     }
 }
 
-@mixin vignette($img_pos: -25%){
+@mixin vignette($img_pos: -80px){
     background: white;
     width: 335px;
     margin: auto;
@@ -58,5 +58,24 @@
         font-size: 1.3em;
         cursor: pointer;
         color: rgb(145, 145, 145);
+    }
+
+    &__new{
+        width: 80px;
+        font-size: 0.8em;
+        font-weight: 500;
+        background: $color-tertiary;
+        padding: 5px;
+        text-align: center;
+        color: darken($color-tertiary, 40%);
+        border-radius: 3px;
+        position: relative;
+        z-index: 1;
+        top: 15px;
+        left: 235px;
+    }
+
+    &__new--hidden{
+        visibility: hidden;
     }
 }

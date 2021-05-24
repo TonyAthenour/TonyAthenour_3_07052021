@@ -216,7 +216,7 @@ footer .fa-hands-helping {
 .vignette1__img img, .vignette3__img img, .vignette4__img img {
   width: 100%;
   position: relative;
-  top: -25%;
+  top: -80px;
 }
 
 .vignette1__texte, .vignette3__texte, .vignette4__texte {
@@ -242,6 +242,25 @@ footer .fa-hands-helping {
   color: #919191;
 }
 
+.vignette1__new, .vignette3__new, .vignette4__new {
+  width: 80px;
+  font-size: 0.8em;
+  font-weight: 500;
+  background: #98e2cf;
+  padding: 5px;
+  text-align: center;
+  color: #26876f;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  top: 15px;
+  left: 235px;
+}
+
+.vignette1__new--hidden, .vignette3__new--hidden, .vignette4__new--hidden {
+  visibility: hidden;
+}
+
 .vignette2 {
   background: white;
   width: 335px;
@@ -262,7 +281,7 @@ footer .fa-hands-helping {
 .vignette2__img img {
   width: 100%;
   position: relative;
-  top: -85%;
+  top: -180px;
 }
 
 .vignette2__texte {
@@ -286,6 +305,25 @@ footer .fa-hands-helping {
   font-size: 1.3em;
   cursor: pointer;
   color: #919191;
+}
+
+.vignette2__new {
+  width: 80px;
+  font-size: 0.8em;
+  font-weight: 500;
+  background: #98e2cf;
+  padding: 5px;
+  text-align: center;
+  color: #26876f;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  top: 15px;
+  left: 235px;
+}
+
+.vignette2__new--hidden {
+  visibility: hidden;
 }
 
 img {
