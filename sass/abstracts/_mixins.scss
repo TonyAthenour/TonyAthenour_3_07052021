@@ -21,6 +21,11 @@
     box-shadow: $shadow;
     min-width: 185px;
     cursor: pointer;
+    &:hover{
+        opacity: .8;
+        box-shadow: $shadow-darker;
+        transition: box-shadow 400ms, opacity 400ms;
+    }
 }
 
 @mixin image($x_pos){

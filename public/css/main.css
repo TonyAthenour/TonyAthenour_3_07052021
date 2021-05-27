@@ -59,6 +59,16 @@ h3 {
   cursor: pointer;
 }
 
+.btn:hover {
+  opacity: .8;
+  -webkit-box-shadow: 1px 3px 10px #1a1a1a;
+          box-shadow: 1px 3px 10px #1a1a1a;
+  -webkit-transition: opacity 400ms, -webkit-box-shadow 400ms;
+  transition: opacity 400ms, -webkit-box-shadow 400ms;
+  transition: box-shadow 400ms, opacity 400ms;
+  transition: box-shadow 400ms, opacity 400ms, -webkit-box-shadow 400ms;
+}
+
 .aide ol {
   list-style: none;
   counter-reset: li;
@@ -193,7 +203,7 @@ footer .fa-hands-helping {
   margin-bottom: 70px;
 }
 
-.restaurant {
+#restaurant {
   background: whitesmoke;
   height: 1225px;
 }
