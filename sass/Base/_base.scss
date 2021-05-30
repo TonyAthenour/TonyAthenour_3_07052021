@@ -1,0 +1,27 @@
+@keyframes disappear{
+    0%{
+       opacity: 1;
+    }
+    70%{
+        visibility: hidden;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes ball{
+    0%{
+        transform: scale(50%);
+    }
+    25%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(50%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}

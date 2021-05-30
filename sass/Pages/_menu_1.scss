@@ -23,7 +23,7 @@ article{
         border-bottom: 3px solid $color-tertiary;
     }
     .plats{
-        @include vignette;
+        @include prv_small;
         &__detail{
             font-size: 0.8em;
         }

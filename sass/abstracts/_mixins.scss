@@ -28,17 +28,7 @@
     }
 }
 
-@mixin image($x_pos){
-    border-radius: 25px 25px 0 0;
-    overflow: hidden;
-    img{
-        width: 100%;
-        position: relative;
-        top: $x_pos;
-    }
-}
-
-@mixin vignette($img_pos: -80px){
+@mixin vignette{
     background: white;
     width: 335px;
     margin: auto;
@@ -46,10 +36,6 @@
     border-radius: 25px;
     box-shadow: $shadow;
     cursor: pointer;
-    &__img{
-        height: 175px;
-        @include image($img_pos);
-    }
     &__texte{
         display: flex;
         align-items: center;
@@ -58,15 +44,30 @@
 
     &__detail{
         margin: 0px 10px 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
-        
+}
+
+@mixin prv_large($img_pos: -80px){
+    @include vignette;
+    &__img{
+        height: 175px;
+        border-radius: 25px 25px 0 0;
+        overflow: hidden;
+        img{
+            width: 100%;
+            position: relative;
+            top: $img_pos;
+        }
+    }
     &__favori{
         margin-right: 30px;
         font-size: 1.3em;
         cursor: pointer;
         color: rgb(145, 145, 145);
     }
-
     &__new{
         width: 80px;
         font-size: 0.8em;
@@ -81,16 +82,21 @@
         top: 15px;
         left: 235px;
     }
-
     &__new--hidden{
         visibility: hidden;
     }
+}
 
+@mixin prv_small{
+    @include vignette;
     &__tarif{
-        padding-right: 20px;
-        padding-top: 15px;
-        margin-bottom: 0px;
+        position: relative;
+        top: 15px;
+        left: -15px;
         font-size: 0.8em;
         font-weight: 500;
+    }
+    &:active{
+        background:rgb(145, 145, 145);
     }
 }

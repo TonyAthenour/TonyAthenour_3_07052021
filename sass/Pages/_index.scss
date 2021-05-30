@@ -30,9 +30,9 @@
 }
 
 .vignette1, .vignette3, .vignette4{
-    @include vignette;
+    @include prv_large;
 }
 
 .vignette2{
-    @include vignette(-180px);
+    @include prv_large(-180px);
 }
