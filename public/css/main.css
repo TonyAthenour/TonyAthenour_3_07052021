@@ -63,6 +63,28 @@
   }
 }
 
+@-webkit-keyframes check {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translatex(-50px);
+            transform: translatex(-50px);
+  }
+}
+
+@keyframes check {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translatex(-50px);
+            transform: translatex(-50px);
+  }
+}
+
 #bloc_page {
   font-family: Roboto, arial, serif;
   font-weight: 300;
@@ -440,19 +462,19 @@ footer .fa-hands-helping {
   z-index: -1;
 }
 
-article {
+.menu {
   background: whitesmoke;
   border-radius: 35px 35px 0 0;
   margin-top: -60px;
   padding-bottom: 1px;
 }
 
-article h1 {
+.menu h1 {
   padding: 20px 20px 0px 20px;
   font-weight: 300;
 }
 
-article h2 {
+.menu h2 {
   font-size: 0.9em;
   font-weight: 400;
   color: #6e6e6e;
@@ -462,7 +484,7 @@ article h2 {
   border-bottom: 3px solid #98e2cf;
 }
 
-article .plats {
+.plats {
   background: white;
   width: 335px;
   margin: auto;
@@ -473,7 +495,7 @@ article .plats {
   cursor: pointer;
 }
 
-article .plats__texte {
+.plats__texte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,14 +507,14 @@ article .plats__texte {
           justify-content: space-between;
 }
 
-article .plats__detail {
+.plats__detail {
   margin: 0px 10px 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-article .plats__tarif {
+.plats__tarif {
   position: relative;
   top: 15px;
   left: -15px;
@@ -500,15 +522,26 @@ article .plats__tarif {
   font-weight: 500;
 }
 
-article .plats:active {
-  background: #919191;
+.plats:active .plats__detail {
+  width: 220px;
+  -webkit-transition: width 400ms;
+  transition: width 400ms;
 }
 
-article .plats__detail {
+.plats:active .plats__tarif {
+  -webkit-animation: check 400ms forwards;
+          animation: check 400ms forwards;
+}
+
+.plats__detail {
   font-size: 0.8em;
 }
 
-article .commande {
+.plats:active + .plats__details {
+  background: green;
+}
+
+.commande {
   margin: 50px;
   text-align: center;
 }

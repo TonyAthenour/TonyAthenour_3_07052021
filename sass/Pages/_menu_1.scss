@@ -4,7 +4,7 @@
     z-index: -1;
 }
 
-article{
+.menu{
     background: $color-background;
     border-radius: 35px 35px 0 0;
     margin-top: -60px;
@@ -22,14 +22,19 @@ article{
         width: 40px;
         border-bottom: 3px solid $color-tertiary;
     }
-    .plats{
-        @include prv_small;
-        &__detail{
-            font-size: 0.8em;
-        }
+}
+
+.plats{
+    @include prv_small;
+    &__detail{
+        font-size: 0.8em;
     }
-    .commande{
-        margin: 50px;
-        text-align: center;
+    &:active + .plats__details{
+        background: green;
     }
+}
+
+.commande{
+    margin: 50px;
+    text-align: center;
 }

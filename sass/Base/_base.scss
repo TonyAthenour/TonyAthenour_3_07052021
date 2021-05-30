@@ -25,3 +25,12 @@
         transform: scale(100%);
     }
 }
+
+@keyframes check{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translatex(-50px);
+    }
+}

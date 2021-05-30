@@ -96,7 +96,11 @@
         font-size: 0.8em;
         font-weight: 500;
     }
-    &:active{
-        background:rgb(145, 145, 145);
+    &:active &__detail{
+        width: 220px;
+        transition: width 400ms;
+    }
+    &:active &__tarif{
+        animation: check 400ms forwards;
     }
 }
