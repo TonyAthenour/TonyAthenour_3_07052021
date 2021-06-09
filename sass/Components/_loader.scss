@@ -9,16 +9,19 @@
     animation: disappear 1000ms 3s forwards;
 }
 
-#loader{
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    margin: -15px 0 0 -15px;
-    z-index: 3;
-    border-radius: 50%;
+#loader1{
+    @include ball;
+    background: $color-primary;
+}
+
+#loader2{
+    @include ball;
+    background: $color-secondary;
+    animation-delay: 250ms;
+}
+
+#loader3{
+    @include ball;
     background: $color-tertiary;
-    animation: ball 3s;
+    animation-delay: 500ms;
 }

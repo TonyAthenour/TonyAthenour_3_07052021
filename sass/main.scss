@@ -1,18 +1,18 @@
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@import "./Abstracts/variables";
+@import "./Abstracts/mixins";
 
-@import "./base/base";
-@import "./base/typography";
-
-@import 
-    "./components/buttons",
-    "./components/loader";
-
-@import "./layout/form";
-@import "./layout/header";
-@import "./layout/footer";
+@import "./Base/base";
+@import "./Base/typography";
 
 @import 
-    "./pages/index",
-    "./pages/menu_1";
+    "./Components/buttons",
+    "./Components/loader";
+
+@import "./Layout/form";
+@import "./Layout/header";
+@import "./Layout/footer";
+
+@import 
+    "./Pages/index",
+    "./Pages/menu_1";
 

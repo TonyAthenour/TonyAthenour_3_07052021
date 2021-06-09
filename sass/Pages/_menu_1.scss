@@ -29,12 +29,19 @@
     &__detail{
         font-size: 0.8em;
     }
-    &:active + .plats__details{
-        background: green;
-    }
 }
 
 .commande{
     margin: 50px;
     text-align: center;
+}
+
+$appear: appear 1200ms backwards;
+
+.anim_1{
+    animation: $appear 800ms;
+}
+
+.anim_2{
+    animation: $appear 1200ms;
 }
