@@ -36,12 +36,8 @@
     text-align: center;
 }
 
-$appear: appear 1200ms backwards;
-
-.anim_1{
-    animation: $appear 800ms;
-}
-
-.anim_2{
-    animation: $appear 1200ms;
+@for $i from 1 through 10 {
+    .anim_#{$i}{
+        animation: appear 800ms backwards 250ms*$i;
+    }
 }

@@ -38,10 +38,11 @@
 @keyframes appear{
     0%{
         opacity: 0;
-        scale: 0;
+        transform-origin: top;
+        transform: scaley(0);
     }
     50%{
-        scale: 1;
+        transform: scaley(1);
     }
     100%{
         opacity: 1;

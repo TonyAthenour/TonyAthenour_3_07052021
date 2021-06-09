@@ -44,9 +44,6 @@
 
     &__titre{
         width: 270px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         transition: width 400ms;
     }
 
@@ -144,6 +141,9 @@
 
     &:active &__titre{
         width: 220px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     &:active &__tarif{
@@ -168,5 +168,5 @@
     height: 30px;
     z-index: 3;
     border-radius: 50%;
-    animation: ball 4s both;
+    animation: ball 3s both;
 }
