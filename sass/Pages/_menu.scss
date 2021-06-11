@@ -38,6 +38,6 @@
 
 @for $i from 1 through 10 {
     .anim_#{$i}{
-        animation: appear 800ms backwards 250ms*$i;
+        animation: appear 800ms backwards 150ms*$i;
     }
 }

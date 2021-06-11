@@ -702,52 +702,52 @@ footer .fa-hands-helping {
 }
 
 .anim_1 {
-  -webkit-animation: appear 800ms backwards 250ms;
-          animation: appear 800ms backwards 250ms;
+  -webkit-animation: appear 800ms backwards 150ms;
+          animation: appear 800ms backwards 150ms;
 }
 
 .anim_2 {
-  -webkit-animation: appear 800ms backwards 500ms;
-          animation: appear 800ms backwards 500ms;
+  -webkit-animation: appear 800ms backwards 300ms;
+          animation: appear 800ms backwards 300ms;
 }
 
 .anim_3 {
+  -webkit-animation: appear 800ms backwards 450ms;
+          animation: appear 800ms backwards 450ms;
+}
+
+.anim_4 {
+  -webkit-animation: appear 800ms backwards 600ms;
+          animation: appear 800ms backwards 600ms;
+}
+
+.anim_5 {
   -webkit-animation: appear 800ms backwards 750ms;
           animation: appear 800ms backwards 750ms;
 }
 
-.anim_4 {
-  -webkit-animation: appear 800ms backwards 1000ms;
-          animation: appear 800ms backwards 1000ms;
-}
-
-.anim_5 {
-  -webkit-animation: appear 800ms backwards 1250ms;
-          animation: appear 800ms backwards 1250ms;
-}
-
 .anim_6 {
-  -webkit-animation: appear 800ms backwards 1500ms;
-          animation: appear 800ms backwards 1500ms;
+  -webkit-animation: appear 800ms backwards 900ms;
+          animation: appear 800ms backwards 900ms;
 }
 
 .anim_7 {
-  -webkit-animation: appear 800ms backwards 1750ms;
-          animation: appear 800ms backwards 1750ms;
+  -webkit-animation: appear 800ms backwards 1050ms;
+          animation: appear 800ms backwards 1050ms;
 }
 
 .anim_8 {
-  -webkit-animation: appear 800ms backwards 2000ms;
-          animation: appear 800ms backwards 2000ms;
+  -webkit-animation: appear 800ms backwards 1200ms;
+          animation: appear 800ms backwards 1200ms;
 }
 
 .anim_9 {
-  -webkit-animation: appear 800ms backwards 2250ms;
-          animation: appear 800ms backwards 2250ms;
+  -webkit-animation: appear 800ms backwards 1350ms;
+          animation: appear 800ms backwards 1350ms;
 }
 
 .anim_10 {
-  -webkit-animation: appear 800ms backwards 2500ms;
-          animation: appear 800ms backwards 2500ms;
+  -webkit-animation: appear 800ms backwards 1500ms;
+          animation: appear 800ms backwards 1500ms;
 }
 /*# sourceMappingURL=main.css.map */
