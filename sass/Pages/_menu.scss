@@ -1,7 +1,14 @@
-.img_background img{
+.img_background{
+    height: 250px;;
+    overflow: hidden;
+    & img{
     width: 375px;
     position: relative;
     z-index: -1;
+    }
+    &--pos img{
+        top: -95px;
+    }
 }
 
 .menu{
